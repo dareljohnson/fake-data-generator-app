@@ -44,7 +44,9 @@ Requirements:
 
 Create a custom python environment for your project:
 
+```
 conda create --name faker python=3.10
+```
 
 If you are using the PowerShell command line interface, you may need to initialize a shell for the conda environment.
 
@@ -64,27 +66,36 @@ Currently supported shells are:
   
 I'm going to use cmd.exe:
 
+```
 conda init cmd.exe
+```
 
 Activate the environment:
 
+```
 conda activate faker
+```
 
 # Clone the repo
 
 Clone repo to current directory
 
+```
 git clone https://github.com/dareljohnson/fake-data-generator-app.git .
+```
 
+## Install the packages
+
+```
 pip install -r requirements.txt
-
+```
 
 ## How to Run the Project
 
-Run the local application server:
+Run the local application:
 
 ```
-python main.py
+python main.py filename.csv
 ```
 
 
