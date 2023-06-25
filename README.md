@@ -4,7 +4,7 @@
 
 ## Project Description
 
-This repository contains the source code for a Python console app, using the Faker library to generate an arbitrary length of columnar data.
+This repository contains the source code for a Python console app, using the Faker library to generate an arbitrary length of columnar data. This generator creates a CSV file.
 
 ## Assumptions
 
@@ -95,7 +95,7 @@ pip install -r requirements.txt
 Run the local application:
 
 ```
-python main.py filename.csv
+python main.py filename # You don't need to add a file extension
 ```
 
 
