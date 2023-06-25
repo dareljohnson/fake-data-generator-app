@@ -26,7 +26,9 @@ class DataGenerator:
         for _ in range(num_rows):
             row = {}
             row["Company"] = random.choice(["IBM","Microsoft","Apple","Google","Amazon","Facebook","Oracle","SAP","Salesforce","Adobe","Intel","Cisco","Dell","VMware","HP","Huawei","HPE","NTT","NEC","NTT Data","NTT Communications","NTT Security","NTT DOCOMO","NTT TechnoCross","NTT Urban Development","NTT Finance","NTT Advanced Technology","NTT DATA Business Solutions"])
+
             row["Product"] = random.choice(["Solo", "Professional", "Enterprise"])
+
             row["Last Name"] = fake.last_name()
 
             # Generate First name with a random percentage of Male and Female names
@@ -34,6 +36,7 @@ class DataGenerator:
                 row["First Name"] = fake.first_name_female()
             else:
                 row["First Name"] = fake.first_name_male()
+
             row["Telephone"] = fake.basic_phone_number()
             
             row["Deal Status"] = random.choice(["Closed", "Follow Up", "No Deal", "Interested" ,""])
@@ -45,6 +48,7 @@ class DataGenerator:
                 row["Completion Date"] = self._generate_random_date(datetime.date(2002, 6, 1), datetime.date(2023, 6, 30))
 
             row["Sales Code"] = random.choice(["RPT", "NEW", "UPG", "ADD", ""])
+
             row["Type of Contact"] = random.choice(["In Person", "Expo Event", "Telephonic", "Email", "Social Media",""])
 
             # Generate Reach Attempt #1 with a random percentage of blank dates
@@ -74,11 +78,14 @@ class DataGenerator:
                 row["Follow up"] = self._generate_random_date(datetime.date(2023, 1, 1), datetime.date(2023, 6, 30))
 
             row["Type Of Contact"] = random.choice(["In Person", "Telephonic",""])
+
             row["Last Name of Sales Rep"] = fake.last_name()
+
             if random.random() < 0.67:
                 row["First Name of Sales Rep"] = fake.first_name_female()
             else:
                 row["First Name of Sales Rep"] = fake.first_name_male()
+                
             row["Title of Sales Rep"] = random.choice(["Associate", "Manager", "Closer", ""])
             row["Comments"] = ""
             
