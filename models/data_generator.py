@@ -34,7 +34,7 @@ class DataGenerator:
                 row["First Name"] = fake.first_name_female()
             else:
                 row["First Name"] = fake.first_name_male()
-            row["Telephone"] = fake.basic_phone_number() # str(random.randint(100000000, 999999999))  # Generate 9-digit random number
+            row["Telephone"] = fake.basic_phone_number()
             
             row["Deal Status"] = random.choice(["Closed", "Follow Up", "No Deal", "Interested" ,""])
 
